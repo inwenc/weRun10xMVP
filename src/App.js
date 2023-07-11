@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import MapComponent from "./MapComponent";
+import "leaflet/dist/leaflet.css";
 
 function App() {
+  const coordinates = [40.7826, -73.968285]; // Example coordinates
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>OpenStreetMap Example</h1>
+        <MapComponent className="mapComponents" coordinates={coordinates} />
+      </div>
     </div>
   );
 }

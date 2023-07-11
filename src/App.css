@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.MapComponent {
+  width: 100%;
+  height: 800px;
+  z-index: 1;
 }
 
 .App-logo {
